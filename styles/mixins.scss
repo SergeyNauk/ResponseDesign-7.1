@@ -1,0 +1,27 @@
+@mixin clearfix() {
+&:before,
+&:after {
+  content: "";
+  display: table;
+}
+&:after {
+  clear: both;
+  }
+}
+
+@mixin last-child() {
+  &:last-of-type {
+    @content
+  }
+}
+
+@mixin first-child() {
+  &:first-of-type {
+    @content
+  }
+}
+
+@mixin sixtyProcent(){
+  width:60%;
+  margin-left:20%;
+}
